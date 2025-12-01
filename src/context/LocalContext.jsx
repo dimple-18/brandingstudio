@@ -26,7 +26,7 @@ export const LocalProvider = ({ children }) => {
   });
 
   const [webinfo, setwebinfo] = useState({
-    name: "Digiborr",
+    name: "Branding Studio",
     phone: "",
     phonecall: "",
     logo:
