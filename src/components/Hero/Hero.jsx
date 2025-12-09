@@ -86,19 +86,17 @@ const Hero = () => {
         {/* LEFT */}
         <div className="mk-left">
           <motion.span className="mk-pill" variants={fadeUp}>
-            {brand} • Tech Support
+            {brand} • Digital Growth Partner
           </motion.span>
 
           <motion.h1 className="mk-title" variants={fadeUp}>
-            Fast, Friendly <span className="mk-title-accent">Tech Support</span>
+            <span className="mk-title-accent">Result-Driven Marketing</span>
             <br />
-            When You Need It
+            That Grows Your Business
           </motion.h1>
 
           <motion.p className="mk-sub" variants={fadeUp}>
-            We fix laptops, desktops, printers and Wi-Fi issues remotely or
-            on-site. Secure, policy-safe workflows with clear pricing and simple
-            updates.
+            10+ Years of Creative Excellence | 2000+ Brands Empowered | 20+ Crore in Ad Spend A passionate team of branding specialists, delivering impactful, design-led solutions to clients across the globe.
           </motion.p>
 
           <motion.div className="mk-ctas" variants={fadeUp}>
@@ -109,9 +107,9 @@ const Hero = () => {
                 e.preventDefault();
                 openTelegram?.(); // centralized logic handles app/web/fallback
               }}
-              aria-label="Get Tech Support on Telegram"
+              aria-label="Get Tech Support on WhatsApp"
             >
-              Get Tech Support on Telegram
+              Start Your Growth on WhatsApp
             </button>
 
             <button
@@ -125,9 +123,9 @@ const Hero = () => {
 
           {/* credibility chips */}
           <motion.ul className="mk-trust" variants={fadeUp}>
-            <li>Secure remote sessions</li>
-            <li>Clear, upfront steps</li>
-            <li>Fast response</li>
+            <li>Creative Strategies</li>
+            <li>More Traffic, More Leads</li>
+            <li>Smart SEO + Social Media</li>
           </motion.ul>
         </div>
 
