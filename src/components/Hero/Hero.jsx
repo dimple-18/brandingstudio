@@ -8,8 +8,10 @@ import {
   FaShareAlt,
   FaSearch,
   FaBullhorn,
-  FaUserSecret,
   FaLaptopCode,
+  FaUserSecret,
+  FaVideo,
+  FaPalette
 } from "react-icons/fa";
 
 const DEFAULT_HERO_IMG =
@@ -38,37 +40,37 @@ const Hero = () => {
   const heroImage = webinfo?.heroImage || DEFAULT_HERO_IMG;
 
   const services = [
-    {
-      label: "SMO",
-      icon: <FaShareAlt />,
-      to: "/services/smo",
-      desc: "Social posts, engagement & boosting",
-    },
-    {
-      label: "SEO",
-      icon: <FaSearch />,
-      to: "/services/seo",
-      desc: "White-hat technical + content",
-    },
-    {
-      label: "Google Ads (PPC)",
-      icon: <FaBullhorn />,
-      to: "/services/google-ads-ppc",
-      desc: "Tech Industry Covered",
-    },
-    {
-      label: "Website / Web Dev",
-      icon: <FaLaptopCode />,
-      to: "/services/website-development",
-      desc: "Fast, conversion-first builds",
-    },
-    {
-      label: "Ethical Hacking",
-      icon: <FaUserSecret />,
-      to: "/services/ethical-hacking",
-      desc: "Pen-testing, vulnerability assessment & cyber defense",
-    },
-  ];
+  {
+    label: "Film Making",
+    icon: <FaVideo />,
+    to: "/services/film-making",
+    desc: "Ad films, brand stories & cinematic content",
+  },
+  {
+    label: "Social Media Marketing",
+    icon: <FaShareAlt />,
+    to: "/services/social-media-marketing",
+    desc: "Content, engagement & paid boosting",
+  },
+  {
+    label: "Graphic Designing",
+    icon: <FaPalette />,
+    to: "/services/graphic-designing",
+    desc: "Visual identity, creatives & brand design",
+  },
+  {
+    label: "Website / Web Dev",
+    icon: <FaLaptopCode />,
+    to: "/services/website-development",
+    desc: "Fast, conversion-focused websites",
+  },
+  {
+    label: "SEO",
+    icon: <FaSearch />,
+    to: "/services/seo",
+    desc: "Technical + content-driven search growth",
+  },
+];
 
   return (
     <section className="mk-hero mk-hero--enhanced" aria-label="Hero">
@@ -90,15 +92,14 @@ const Hero = () => {
           </motion.span>
 
           <motion.h1 className="mk-title" variants={fadeUp}>
-            <span className="mk-title-accent">Result-Driven Marketing</span>
+            <span className="mk-title-accent">We Build Brands That Grow
+        </span>
             <br />
-            That Grows Your Business
+            Digitally & Strategically
           </motion.h1>
 
           <motion.p className="mk-sub" variants={fadeUp}>
-            10+ Years of Creative Excellence | 2000+ Brands Empowered | 20+ Crore in Ad Spend A passionate team of branding specialists, delivering impactful, design-led solutions to clients across the globe.
-          </motion.p>
-
+              Branding Studios is a full-service creative and digital production company specializing in film making, ad films, content creation, and social media marketing. We blend cinematic storytelling with data-driven strategy to help brands grow, connect, and dominate in the digital-first world.    </motion.p>
           <motion.div className="mk-ctas" variants={fadeUp}>
             {/* ⬇️ Button now uses centralized openTelegram */}
             <button
@@ -107,9 +108,9 @@ const Hero = () => {
                 e.preventDefault();
                 openTelegram?.(); // centralized logic handles app/web/fallback
               }}
-              aria-label="Get Tech Support on WhatsApp"
+              aria-label="Click Here to Get Started"
             >
-              Start Your Growth on WhatsApp
+              Click Here to Get Started
             </button>
 
             <button
@@ -122,11 +123,11 @@ const Hero = () => {
           </motion.div>
 
           {/* credibility chips */}
-          <motion.ul className="mk-trust" variants={fadeUp}>
+           <motion.ul className="mk-trust" variants={fadeUp}>
             <li>Creative Strategies</li>
             <li>More Traffic, More Leads</li>
             <li>Smart SEO + Social Media</li>
-          </motion.ul>
+          </motion.ul> 
         </div>
 
         {/* RIGHT */}
